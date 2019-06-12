@@ -1,12 +1,17 @@
 @font-face{
     font-family: 'myFont';
-    src: url(../event-website/fonts/budmojigglish.ttf)
+    src: url(../event-website/fonts/budmojigglish.ttf);
 }
 
+@font-face{
+    font-family: 'newFontTwo';
+    src: url(../event-website/fonts/absender1.ttf);
+}
 
 h1{
     font-family: 'myFont';
-    font-size: 80px;
+    color: #212121;
+    font-size: 100px;
     text-align: center;
     padding-left: 200px;
     padding-right: 200px;
@@ -16,8 +21,155 @@ body {
     background-color: #fab95b;
 }
 
-.container {
-    padding-right: 200px;
-    padding-left: 200px;
-    text-align: center;
+#hands {
+    width: 50%;
+    height: 368.63px;
+    float: left;
+    opacity: 0.7;
+    
 }
+
+#hands:hover {
+    opacity: 1;
+}
+
+#event {
+    width: 50%;
+    height: 368.63px;
+    float: left;
+    opacity: 0.7;
+}
+
+#event:hover {
+    opacity: 1;
+}
+
+#other {
+    width: 50%;
+    height: 368.63px;
+    float: left;
+    opacity: 0.7;
+}
+
+#other:hover {
+    opacity: 1;
+}
+
+#othertwo {
+    width: 50%;
+    height: 368.63px;
+    float: left;
+    opacity: 0.7;
+}
+
+#othertwo:hover {
+    opacity: 1;
+}
+
+.container {
+    padding-right: 100px;
+    padding-left: 100px;
+    text-align: center;
+    position: relative;
+}
+
+.othercontainer {
+    text-align: center;
+    position: relative;
+}
+.centered {
+    position: absolute;
+    font-family: 'newFontTwo';
+    top: 50%;
+    font-size: 35px;
+    color: white;
+    float: left;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.signin {
+    text-align: right;
+    font-size: 18px;
+    font-family: 'newFontTwo';
+    padding-bottom: 15px;
+}
+
+.signin a{
+    text-decoration: none;
+    color: #212121;
+}
+
+.signin.button{
+    color:black;
+}
+.banner {
+    color: white;
+    background-color: #212121;
+    font-family: 'newFontTwo';
+    word-spacing: 100px;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    text-align: center;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
