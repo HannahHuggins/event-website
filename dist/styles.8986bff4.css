@@ -1,0 +1,23 @@
+@font-face{
+    font-family: 'myFont';
+    src: url(budmojigglish.d4728d59.ttf)
+}
+
+
+h1{
+    font-family: 'myFont';
+    font-size: 80px;
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+body {
+    background-color: #fab95b;
+}
+
+.container {
+    padding-right: 200px;
+    padding-left: 200px;
+    text-align: center;
+}
