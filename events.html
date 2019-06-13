@@ -87,10 +87,31 @@
     </div>
     </span>
     <br>
+    <div id="myData"></div>
 
-    
-    
-    
+    <script>
+        fetch('http://localhost:8080/events')
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (data) {
+                appendData(data);
+            })
+            .catch(function (err) {
+                console.log('error: ' + err);
+            });
+
+        function appendData(data) {
+            var mainContainer = document.getElementById("myData");
+            for (var i = 0; i < data.length; i++) {
+                var div = document.createElement("div");
+                div.innerHTML = 'Name: ' + data[i].name + '       Location: ' + data[i].location + '       Date: ' + data[i].date + '       Time: ' + data[i].time + '       Cost: £' + data[i].cost + '       Event type: ' + data[i].type;
+                mainContainer.appendChild(div);
+            }
+        }
+    </script>
+
+
     <div class="container">
      <div class="handscontainer">
     <img id="hands" src="images/live-music-gigs.jpg">

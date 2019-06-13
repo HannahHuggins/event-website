@@ -173,3 +173,8 @@ body {
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+  #myData {
+      font-size: 20px;
+      font-family: 'newFontTwo';
+  }

@@ -1,11 +1,11 @@
 @font-face{
     font-family: 'myFont';
-    src: url(budmojigglish.d4728d59.ttf);
+    src: url(/budmojigglish.d4728d59.ttf);
 }
 
 @font-face{
     font-family: 'newFontTwo';
-    src: url(absender1.0c9ca680.ttf);
+    src: url(/absender1.0c9ca680.ttf);
 }
 
 h1{
@@ -173,3 +173,10 @@ body {
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+  #myData {
+      font-size: 20px;
+      font-family: 'newFontTwo';
+  }
+
+/*# sourceMappingURL=/styles.8986bff4.css.map */
